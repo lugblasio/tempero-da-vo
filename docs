@@ -1,1 +1,24 @@
+# 📄 Documentação de Engenharia de Software - Tempero da Vó
 
+Este repositório centraliza todos os artefatos de planejamento e modelagem do sistema, garantindo a escalabilidade e a manutenção do projeto.
+
+## 🎯 Levantamento de Requisitos
+
+### Requisitos Funcionais (RF)
+- **RF-01:** O sistema deve exibir fotos reais dos pratos para gerar confiança no cliente.
+- **RF-02:** O sistema deve gerenciar um programa de pontos acumulativos.
+- **RF-03:** O sistema deve permitir a emissão de um resumo de pedido para impressão ou WhatsApp.
+
+### Requisitos Não Funcionais (RNF)
+- **RNF-01:** O sistema deve ser responsivo para funcionar em smartphones antigos.
+- **RNF-02:** O tempo de carregamento não deve ultrapassar 3 segundos para evitar desistência.
+
+## 📊 Modelagem de Dados
+- **MER (Modelo Entidade-Relacionamento):** Descrição das entidades Cliente, Produto, Pedido e Pontos.
+- **DER (Diagrama Entidade-Relacionamento):** (Ver arquivo `/docs/der.png`).
+
+## 🏗️ Arquitetura da Solução
+O projeto utiliza uma arquitetura desacoplada (Client-Server):
+1. **Front-end:** Angular consome dados via JSON.
+2. **Back-end:** API Node.js processa a lógica e segurança.
+3. **Banco de Dados:** Persistência relacional para garantir a integridade dos pontos de fidelidade.
